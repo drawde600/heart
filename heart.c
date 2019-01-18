@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<string.h>
 
-//derived from the equation
+//derived from the equation, scaled to fit integer values
 //http://mathworld.wolfram.com/HeartCurve.html
 //(x^2 + y^2 - 1)^3 - x^2 y^3 = 0
   
