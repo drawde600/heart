@@ -23,6 +23,6 @@ static void render(const char *msg) {
 }
 
 int main() {
-  render("HelloWorld");
+  render("Valentine");
   return 0;
 }
