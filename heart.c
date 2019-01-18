@@ -10,10 +10,11 @@
 
 static void render(const char *msg) {
   int len = strlen(msg);
-  for (int y = 14; y > -14; y--) {
+  int x, y;
+  for (y = 14; y > -14; y--) {
     char buf[64] = {0};
     char *ptr = buf;
-    for (int x = -25; x < 25; x++) {
+    for (x = -25; x < 25; x++) {
       double val = CUBE(SQUARE(0.05 * x) + SQUARE(0.1 * y) - 1) - (SQUARE(0.05 * x) * CUBE(0.1 * y));
       *ptr++ = val <= 0 ? msg[(x - 1) % len < 0 ? (x - 1) % len + len : (x - 1) % len] : '.';
     }
